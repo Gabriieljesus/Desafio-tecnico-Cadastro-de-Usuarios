@@ -81,6 +81,7 @@ export const Input = styled.input`
   color: #f8fafc;
   font-size: 15px;
   outline: none;
+  font-weight: 600;
 
   &::placeholder {
     color: #94a3b8;

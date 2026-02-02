@@ -1,6 +1,7 @@
 import { useRef }from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../../services/api.js';
+import { toast } from 'react-toastify';
 
 import { Title, 
   Container,  
@@ -34,9 +35,9 @@ function Home() {
     inputAge.current.value = "";
     inputEmail.current.value = "";
 
-    alert('Usuário cadastrado com sucesso!');
+    toast.success('Usuário cadastrado com sucesso!');
   } catch (error) {
-    alert('Erro ao cadastrar usuário');
+    toast.error('Erro ao cadastrar usuário');
     console.error(error);
   }
 }
